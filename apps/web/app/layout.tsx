@@ -90,8 +90,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Google Search Console認証（後で設定）
-    // google: "YOUR_VERIFICATION_CODE",
+    google: "V1-keVq1sImNfHStAjHPsSXQ_5Z5JABh8dJnq3zkDlU",
   },
   category: "automotive",
 };
