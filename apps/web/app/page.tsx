@@ -25,7 +25,7 @@ const COMPANY = {
 // 哲学: 信頼訴求（25年・Google 5.0・カーセンサー掲載）、電話ファースト
 function HeroSection() {
   return (
-    <section className="bg-[#1e3a5f] py-16 text-white md:py-24">
+    <section className="bg-[#1e3a5f] py-20 text-white md:py-32">
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-8 md:grid-cols-2">
           {/* 左側: メッセージ */}
@@ -69,7 +69,7 @@ function HeroSection() {
 // 哲学: 第三者評価で信頼を借りる（Google・カーセンサー）
 function TrustBadgesSection() {
   return (
-    <section className="border-b bg-gray-50 py-8">
+    <section className="border-b bg-gray-50 py-6">
       <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:flex-row md:gap-12">
         <a
           href={COMPANY.googleMapUrl}
@@ -90,6 +90,48 @@ function TrustBadgesSection() {
           <span className="font-semibold">カーセンサー掲載店舗</span>
           <span className="text-sm text-gray-500">→</span>
         </a>
+      </div>
+    </section>
+  );
+}
+
+// ===== ストーリーセクション =====
+// 哲学: 人柄と歴史を伝える（Basecampに学ぶ）
+function StorySection() {
+  return (
+    <section className="py-20 md:py-28">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-8 text-3xl font-bold text-[#1e3a5f] md:text-4xl">
+            さいたま市緑区で{COMPANY.years}年
+          </h2>
+          <p className="mb-6 text-lg leading-relaxed text-gray-700">
+            2000年の創業以来、地域のお客様の「車のかかりつけ医」として
+            <br className="hidden md:block" />
+            一台一台、丁寧に向き合ってきました。
+          </p>
+          <p className="mb-8 text-lg leading-relaxed text-gray-700">
+            大手にはできない、顔の見える関係を大切にしています。
+            <br className="hidden md:block" />
+            困ったときに「あ、あそこに電話しよう」と思い出してもらえる。
+            <br className="hidden md:block" />
+            そんな存在でありたいと思っています。
+          </p>
+          <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-12">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-[#e8a83e]">{COMPANY.years}</div>
+              <div className="text-sm text-gray-600">年の実績</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-[#e8a83e]">★{COMPANY.googleRating}</div>
+              <div className="text-sm text-gray-600">Google評価</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-[#e8a83e]">1</div>
+              <div className="text-sm text-gray-600">人で対応（社長直通）</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -150,18 +192,18 @@ function ServicesSection() {
   ];
 
   return (
-    <section className="py-16">
+    <section className="bg-gray-50 py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
           SERVICE
         </div>
-        <h2 className="mb-12 text-center text-3xl font-bold">お任せください</h2>
+        <h2 className="mb-16 text-center text-3xl font-bold md:text-4xl">お任せください</h2>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <AnimateOnScroll key={service.title} delay={index < 3 ? ((index * 100) as 100 | 200 | 300) : undefined}>
               <div
-                className={`h-full rounded-xl border p-6 transition hover:shadow-lg ${
+                className={`h-full rounded-2xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                   service.highlight ? "border-red-200 bg-red-50" : "bg-white"
                 }`}
               >
@@ -204,7 +246,7 @@ function ServicesSection() {
 // ===== 車検シミュレーターセクション =====
 // 哲学: SEO価値（車種別ページ）、法定費用のみ表示（店による差がない部分）
 function InspectionSection() {
-  // 人気車種を表示
+  // 人気車種を表示（背景色がサービスセクションにあるので、ここは白）
   const popularVehicles = [
     { maker: "honda", model: "n-box", name: "N-BOX", type: "軽自動車" },
     { maker: "toyota", model: "prius", name: "プリウス", type: "普通車" },
@@ -217,13 +259,13 @@ function InspectionSection() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
           SIMULATION
         </div>
-        <h2 className="mb-4 text-center text-3xl font-bold">車検費用を確認</h2>
-        <p className="mb-12 text-center text-gray-600">
+        <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">車検費用を確認</h2>
+        <p className="mb-16 text-center text-gray-600">
           車種を選ぶと法定費用（重量税・自賠責・印紙代）がわかります
         </p>
 
@@ -232,7 +274,7 @@ function InspectionSection() {
             <Link
               key={`${vehicle.maker}-${vehicle.model}`}
               href={`/inspection/${vehicle.maker}/${vehicle.model}`}
-              className="rounded-xl border bg-white p-4 text-center transition hover:border-[#1e3a5f] hover:shadow-md"
+              className="rounded-xl border bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#1e3a5f] hover:shadow-lg"
             >
               <span className="mb-1 block text-xs text-gray-500">{vehicle.type}</span>
               <span className="text-lg font-bold">{vehicle.name}</span>
@@ -256,12 +298,12 @@ function InspectionSection() {
 // ===== アクセスセクション =====
 function AccessSection() {
   return (
-    <section className="py-16">
+    <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
           ACCESS
         </div>
-        <h2 className="mb-12 text-center text-3xl font-bold">アクセス</h2>
+        <h2 className="mb-16 text-center text-3xl font-bold md:text-4xl">アクセス</h2>
 
         <div className="grid gap-8 md:grid-cols-2">
           {/* Google Map埋め込み */}
@@ -326,7 +368,7 @@ function AccessSection() {
 // ===== よくある質問セクション =====
 // 哲学: 電話ハードルを下げる。事前に不安を解消
 function FAQSection() {
-  const faqs = [
+  const faqs: { question: string; answer: string }[] = [
     {
       question: "車検費用はいくらですか？",
       answer:
@@ -353,18 +395,18 @@ function FAQSection() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
           FAQ
         </div>
-        <h2 className="mb-12 text-center text-3xl font-bold">よくある質問</h2>
+        <h2 className="mb-16 text-center text-3xl font-bold md:text-4xl">よくある質問</h2>
 
         <div className="mx-auto max-w-3xl space-y-4">
           {faqs.map((faq, index) => (
             <details
               key={index}
-              className="group rounded-xl border bg-white shadow-sm"
+              className="group rounded-xl border bg-white shadow-sm transition-all duration-300 hover:shadow-md"
             >
               <summary className="flex cursor-pointer items-center justify-between px-6 py-4 font-semibold text-[#1e3a5f]">
                 <span>Q. {faq.question}</span>
@@ -397,7 +439,7 @@ function FAQSection() {
 // 哲学: 電話が最終ゴール（話せば人柄がわかる）
 function FinalCTASection() {
   return (
-    <section className="bg-[#1e3a5f] py-16 text-white">
+    <section className="bg-[#1e3a5f] py-20 text-white md:py-28">
       <div className="container mx-auto px-4 text-center">
         <h2 className="mb-4 text-2xl font-bold md:text-3xl">
           お気軽にお電話ください
@@ -423,6 +465,7 @@ export default function Home() {
     <>
       <HeroSection />
       <TrustBadgesSection />
+      <StorySection />
       <ServicesSection />
       <InspectionSection />
       <FAQSection />
