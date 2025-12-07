@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "./components/GoogleAnalytics";
 import { JsonLd } from "./components/JsonLd";
 import "./globals.css";
@@ -247,6 +248,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col font-sans">
         <GoogleAnalytics />
+        <Analytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
