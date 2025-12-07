@@ -17,6 +17,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  manifest: "/manifest.json",
   title: {
     default: `${SITE_NAME} | さいたま市緑区で25年 車検・整備・中古車`,
     template: `%s | ${SITE_NAME}`,
