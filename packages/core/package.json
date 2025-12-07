@@ -1,0 +1,29 @@
+{
+  "name": "@aska/core",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./tax": {
+      "types": "./src/tax.ts",
+      "default": "./src/tax.ts"
+    },
+    "./vehicles": {
+      "types": "./src/vehicles.ts",
+      "default": "./src/vehicles.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aska/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@aska/typescript-config": "workspace:*",
+    "typescript": "^5"
+  }
+}

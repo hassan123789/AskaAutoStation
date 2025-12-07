@@ -1,0 +1,17 @@
+{
+  "name": "@aska/types",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@aska/typescript-config": "workspace:*",
+    "typescript": "^5"
+  }
+}

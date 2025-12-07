@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* フォント */
+  --font-family-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  
+  /* ブランドカラー（ロゴから抽出） */
+  --color-navy: #1e3a5f;
+  --color-navy-dark: #152a45;
+  --color-navy-light: #2d4a6f;
+  --color-gold: #e8a83e;
+  --color-gold-dark: #d4952f;
+  --color-gold-light: #f0b84e;
+  
+  /* セマンティックカラー */
+  --color-primary: #1e3a5f;
+  --color-primary-dark: #152a45;
+  --color-accent: #e8a83e;
+  
+  /* アニメーション */
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-slide-up: slide-up 0.6s ease-out forwards;
+  --animate-slide-in-left: slide-in-left 0.6s ease-out forwards;
+  --animate-slide-in-right: slide-in-right 0.6s ease-out forwards;
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slide-in-left {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slide-in-right {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+}
+
+/* スクロールアニメーション（Intersection Observerで発火） */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+.animate-on-scroll.is-visible.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-on-scroll.is-visible.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-on-scroll.is-visible.delay-300 {
+  animation-delay: 0.3s;
+}
