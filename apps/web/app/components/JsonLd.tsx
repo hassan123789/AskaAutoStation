@@ -1,5 +1,6 @@
 // SEO構造化データ（JSON-LD）
 // Google検索結果でのリッチスニペット表示を最適化
+import "server-only";
 
 const SITE_URL = "https://aska-auto.com";
 const COMPANY = {
