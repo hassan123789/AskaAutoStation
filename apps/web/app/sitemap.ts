@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { MAKERS, VEHICLES } from "@aska/core";
 
-const BASE_URL = "https://aska-auto.com";
+const BASE_URL = "https://aska-auto-station-web.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
