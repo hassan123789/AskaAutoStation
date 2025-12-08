@@ -8,7 +8,7 @@ import {
   VehicleInspectionJsonLd,
 } from "../../../components/JsonLd";
 
-const SITE_URL = "https://aska-auto.com";
+const SITE_URL = "https://aska-auto-station-web.vercel.app";
 
 interface Props {
   params: Promise<{ maker: string; model: string }>;

@@ -2,7 +2,7 @@
 // Google検索結果でのリッチスニペット表示を最適化
 import "server-only";
 
-const SITE_URL = "https://aska-auto.com";
+const SITE_URL = "https://aska-auto-station-web.vercel.app";
 const COMPANY = {
   name: "アスカオートステーション",
   // NAPの一貫性: 国際形式で統一

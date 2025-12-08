@@ -6,7 +6,7 @@ import { GoogleAnalytics } from "./components/GoogleAnalytics";
 import { JsonLd } from "./components/JsonLd";
 import "./globals.css";
 
-const SITE_URL = "https://aska-auto.com";
+const SITE_URL = "https://aska-auto-station-web.vercel.app";
 const SITE_NAME = "アスカオートステーション";
 
 export const viewport: Viewport = {

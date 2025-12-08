@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MAKERS, getVehiclesByMaker } from "@aska/core/vehicles";
 import type { Metadata } from "next";
 
-const SITE_URL = "https://aska-auto.com";
+const SITE_URL = "https://aska-auto-station-web.vercel.app";
 
 export const metadata: Metadata = {
   title: `車検費用シミュレーション【${new Date().getFullYear()}年最新】車種別で即計算`,

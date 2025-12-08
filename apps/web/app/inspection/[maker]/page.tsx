@@ -4,7 +4,7 @@ import type { Maker } from "@aska/types";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const SITE_URL = "https://aska-auto.com";
+const SITE_URL = "https://aska-auto-station-web.vercel.app";
 
 interface Props {
   params: Promise<{ maker: string }>;

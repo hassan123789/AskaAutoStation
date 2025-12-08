@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const SITE_URL = "https://aska-auto.com";
+const SITE_URL = "https://aska-auto-station-web.vercel.app";
 
 export const metadata: Metadata = {
   title: "お問い合わせ・アクセス | アスカオートステーション",
