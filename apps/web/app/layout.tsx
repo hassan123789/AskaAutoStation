@@ -145,7 +145,7 @@ function Header() {
           </nav>
           <a
             href="tel:08032506741"
-            className="cta-phone-pulse rounded-full bg-[#c78c1e] px-4 py-2 font-semibold text-[#1e3a5f] transition hover:bg-gold-light"
+            className="cta-phone-pulse rounded-full bg-[#e8a83e] px-4 py-2 font-semibold text-[#1e3a5f] transition hover:bg-gold-light"
           >
             📞 電話する
           </a>
@@ -249,7 +249,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=optional"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <JsonLd />
