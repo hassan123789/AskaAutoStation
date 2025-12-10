@@ -62,7 +62,7 @@ export default function ContactPage() {
             </p>
             <a
               href={COMPANY.phoneTel}
-              className="mx-auto block max-w-md rounded-xl bg-[#e8a83e] py-6 text-center text-3xl font-bold text-[#1e3a5f] transition hover:bg-[#f0b84e]"
+              className="cta-phone-pulse mx-auto block max-w-md rounded-xl bg-[#e8a83e] py-6 text-center text-3xl font-bold text-[#1e3a5f] transition hover:bg-[#f0b84e]"
             >
               📞 {COMPANY.phone}
             </a>

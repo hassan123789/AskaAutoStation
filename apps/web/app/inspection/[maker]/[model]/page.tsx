@@ -200,7 +200,7 @@ export default async function VehicleInspectionPage({ params }: Props) {
               </p>
               <a
                 href="tel:08032506741"
-                className="inline-block rounded-lg bg-gold px-6 py-3 font-bold text-navy transition hover:bg-gold-light"
+                className="cta-phone-pulse inline-block rounded-lg bg-gold px-6 py-3 font-bold text-navy transition hover:bg-gold-light"
               >
                 📞 080-3250-6741
               </a>
@@ -261,7 +261,7 @@ export default async function VehicleInspectionPage({ params }: Props) {
           </p>
           <a
             href="tel:08032506741"
-            className="bg-primary hover:bg-primary-dark inline-block rounded-lg px-8 py-4 text-lg font-bold text-white transition"
+            className="cta-phone-pulse bg-primary hover:bg-primary-dark inline-block rounded-lg px-8 py-4 text-lg font-bold text-white transition"
           >
             📞 080-3250-6741
             <span className="block text-sm font-normal">社長直通</span>

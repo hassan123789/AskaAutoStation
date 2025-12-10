@@ -42,6 +42,20 @@
     from { opacity: 0; transform: translateX(30px); }
     to { opacity: 1; transform: translateX(0); }
   }
+  
+  /* 電話ボタンの呼吸アニメーション */
+  --animate-pulse-cta: pulse-cta 2s ease-in-out infinite;
+  
+  @keyframes pulse-cta {
+    0%, 100% { 
+      transform: scale(1); 
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    50% { 
+      transform: scale(1.02); 
+      box-shadow: 0 0 20px rgba(232, 168, 62, 0.5);
+    }
+  }
 }
 
 /* スクロールアニメーション（Intersection Observerで発火） */
@@ -89,4 +103,24 @@ details[open] summary ~ * {
 ::selection {
   background-color: rgba(232, 168, 62, 0.3);
   color: #1e3a5f;
+}
+
+/* 電話CTAボタンの呼吸アニメーション */
+.cta-phone-pulse {
+  animation: pulse-cta 2s ease-in-out infinite;
+}
+
+.cta-phone-pulse:hover {
+  animation: none;
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(232, 168, 62, 0.6);
+}
+
+/* サービスカードのアイコン強調 */
+.service-icon {
+  transition: transform 0.3s ease-out;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.2);
 }

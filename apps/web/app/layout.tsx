@@ -134,10 +134,18 @@ function Header() {
             >
               アクセス
             </a>
+            <a
+              href="https://www.instagram.com/askaautostation/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              📷 Instagram
+            </a>
           </nav>
           <a
             href="tel:08032506741"
-            className="rounded-full bg-[#e8a83e] px-4 py-2 font-semibold text-[#1e3a5f] transition hover:bg-gold-light"
+            className="cta-phone-pulse rounded-full bg-[#e8a83e] px-4 py-2 font-semibold text-[#1e3a5f] transition hover:bg-gold-light"
           >
             📞 電話する
           </a>

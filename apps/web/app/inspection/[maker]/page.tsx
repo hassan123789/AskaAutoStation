@@ -119,7 +119,7 @@ export default async function MakerPage({ params }: Props) {
           </p>
           <a
             href="tel:08032506741"
-            className="inline-block rounded-lg bg-[#e8a83e] px-8 py-4 text-lg font-bold text-[#1e3a5f] shadow-lg transition hover:bg-[#f0b84e]"
+            className="cta-phone-pulse inline-block rounded-lg bg-[#e8a83e] px-8 py-4 text-lg font-bold text-[#1e3a5f] shadow-lg transition hover:bg-[#f0b84e]"
           >
             📞 080-3250-6741
             <span className="block text-sm font-normal">社長直通</span>

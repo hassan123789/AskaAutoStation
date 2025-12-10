@@ -93,7 +93,7 @@ export default function InspectionPage() {
           <p className="mb-4 text-gray-600">ご不明な点やお見積もりのご依頼はお気軽にどうぞ</p>
           <a
             href="tel:08032506741"
-            className="bg-primary hover:bg-primary-dark inline-block rounded-lg px-8 py-4 text-lg font-bold text-white shadow-lg transition"
+            className="cta-phone-pulse bg-primary hover:bg-primary-dark inline-block rounded-lg px-8 py-4 text-lg font-bold text-white shadow-lg transition"
           >
             📞 080-3250-6741
             <span className="block text-sm font-normal">社長直通</span>

@@ -51,7 +51,7 @@ function HeroSection() {
             </div>
             <a
               href={COMPANY.phoneTel}
-              className="mb-4 block rounded-xl bg-[#e8a83e] py-6 text-center text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
+              className="cta-phone-pulse mb-4 block rounded-xl bg-[#e8a83e] py-6 text-center text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
             >
               📞 {COMPANY.phone}
             </a>
@@ -203,11 +203,11 @@ function ServicesSection() {
           {services.map((service, index) => (
             <AnimateOnScroll key={service.title} delay={index < 3 ? ((index * 100) as 100 | 200 | 300) : undefined}>
               <div
-                className={`h-full rounded-2xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+                className={`service-card h-full rounded-2xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                   service.highlight ? "border-red-200 bg-red-50" : "bg-white"
                 }`}
               >
-                <div className="mb-3 text-3xl">{service.icon}</div>
+                <div className="service-icon mb-3 text-3xl">{service.icon}</div>
                 <h3 className="mb-2 text-xl font-bold">{service.title}</h3>
                 <p className="mb-4 text-gray-600">{service.description}</p>
                 {service.isPhone ? (
@@ -449,7 +449,7 @@ function FinalCTASection() {
         </p>
         <a
           href={COMPANY.phoneTel}
-          className="inline-block rounded-xl bg-[#e8a83e] px-12 py-6 text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
+          className="cta-phone-pulse inline-block rounded-xl bg-[#e8a83e] px-12 py-6 text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
         >
           📞 {COMPANY.phone}
         </a>
