@@ -87,7 +87,7 @@ export default async function MakerPage({ params }: Props) {
             <Link
               key={vehicle.id}
               href={`/inspection/${makerId}/${vehicle.id}`}
-              className="flex items-center justify-between rounded-xl border bg-white p-6 shadow-sm transition hover:border-[#e8a83e] hover:shadow-md"
+              className="flex items-center justify-between rounded-xl border bg-white p-6 shadow-sm transition hover:border-[#c78c1e] hover:shadow-md"
             >
               <div>
                 <h2 className="text-lg font-semibold text-[#1e3a5f]">
@@ -106,7 +106,7 @@ export default async function MakerPage({ params }: Props) {
         <div className="mt-12 text-center">
           <Link
             href="/inspection"
-            className="text-[#1e3a5f] underline hover:text-[#e8a83e]"
+            className="text-[#1e3a5f] underline hover:text-[#c78c1e]"
           >
             ← メーカー一覧へ戻る
           </Link>
@@ -119,7 +119,7 @@ export default async function MakerPage({ params }: Props) {
           </p>
           <a
             href="tel:08032506741"
-            className="cta-phone-pulse inline-block rounded-lg bg-[#e8a83e] px-8 py-4 text-lg font-bold text-[#1e3a5f] shadow-lg transition hover:bg-[#f0b84e]"
+            className="cta-phone-pulse inline-block rounded-lg bg-[#c78c1e] px-8 py-4 text-lg font-bold text-[#1e3a5f] shadow-lg transition hover:bg-[#d9a43a]"
           >
             📞 080-3250-6741
             <span className="block text-sm font-normal">社長直通</span>

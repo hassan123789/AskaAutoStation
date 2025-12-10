@@ -62,7 +62,7 @@ export default function ContactPage() {
             </p>
             <a
               href={COMPANY.phoneTel}
-              className="cta-phone-pulse mx-auto block max-w-md rounded-xl bg-[#e8a83e] py-6 text-center text-3xl font-bold text-[#1e3a5f] transition hover:bg-[#f0b84e]"
+              className="cta-phone-pulse mx-auto block max-w-md rounded-xl bg-[#c78c1e] py-6 text-center text-3xl font-bold text-[#1e3a5f] transition hover:bg-[#d9a43a]"
             >
               📞 {COMPANY.phone}
             </a>
@@ -131,7 +131,7 @@ export default function ContactPage() {
           <div className="mt-12 text-center">
             <Link
               href="/"
-              className="text-[#1e3a5f] underline hover:text-[#e8a83e]"
+              className="text-[#1e3a5f] underline hover:text-[#c78c1e]"
             >
               ← トップページへ戻る
             </Link>

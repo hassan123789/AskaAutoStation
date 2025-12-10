@@ -8,14 +8,14 @@
   --color-navy: #1e3a5f;
   --color-navy-dark: #152a45;
   --color-navy-light: #2d4a6f;
-  --color-gold: #e8a83e;
-  --color-gold-dark: #d4952f;
-  --color-gold-light: #f0b84e;
+  --color-gold: #c78c1e;
+  --color-gold-dark: #a67516;
+  --color-gold-light: #d9a43a;
   
   /* セマンティックカラー */
   --color-primary: #1e3a5f;
   --color-primary-dark: #152a45;
-  --color-accent: #e8a83e;
+  --color-accent: #c78c1e;
   
   /* アニメーション */
   --animate-fade-in: fade-in 0.6s ease-out forwards;
@@ -53,7 +53,7 @@
     }
     50% { 
       transform: scale(1.02); 
-      box-shadow: 0 0 20px rgba(232, 168, 62, 0.5);
+      box-shadow: 0 0 20px rgba(199, 140, 30, 0.5);
     }
   }
 }
@@ -101,7 +101,7 @@ details[open] summary ~ * {
 
 /* テキストのセレクション色 */
 ::selection {
-  background-color: rgba(232, 168, 62, 0.3);
+  background-color: rgba(199, 140, 30, 0.3);
   color: #1e3a5f;
 }
 
@@ -113,7 +113,7 @@ details[open] summary ~ * {
 .cta-phone-pulse:hover {
   animation: none;
   transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(232, 168, 62, 0.6);
+  box-shadow: 0 0 25px rgba(199, 140, 30, 0.6);
 }
 
 /* サービスカードのアイコン強調 */

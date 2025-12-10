@@ -46,12 +46,12 @@ function HeroSection() {
           {/* 右側: 電話CTA（最重要） */}
           <div className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm">
             <div className="mb-4 text-center">
-              <span className="text-[#e8a83e]">★★★★★</span>
+              <span className="text-[#c78c1e]">★★★★★</span>
               <span className="ml-2 text-sm">Google {COMPANY.googleRating}</span>
             </div>
             <a
               href={COMPANY.phoneTel}
-              className="cta-phone-pulse mb-4 block rounded-xl bg-[#e8a83e] py-6 text-center text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
+              className="cta-phone-pulse mb-4 block rounded-xl bg-[#c78c1e] py-6 text-center text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
             >
               📞 {COMPANY.phone}
             </a>
@@ -77,7 +77,7 @@ function TrustBadgesSection() {
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-gray-700 transition hover:text-[#1e3a5f]"
         >
-          <span className="text-[#e8a83e]">★★★★★</span>
+          <span className="text-[#c78c1e]">★★★★★</span>
           <span className="font-semibold">Google {COMPANY.googleRating}</span>
           <span className="text-sm text-gray-500">→</span>
         </a>
@@ -119,15 +119,15 @@ function StorySection() {
           </p>
           <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-12">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#e8a83e]">{COMPANY.years}</div>
+              <div className="text-4xl font-bold text-[#c78c1e]">{COMPANY.years}</div>
               <div className="text-sm text-gray-600">年の実績</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#e8a83e]">★{COMPANY.googleRating}</div>
+              <div className="text-4xl font-bold text-[#c78c1e]">★{COMPANY.googleRating}</div>
               <div className="text-sm text-gray-600">Google評価</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#e8a83e]">1</div>
+              <div className="text-4xl font-bold text-[#c78c1e]">1</div>
               <div className="text-sm text-gray-600">人で対応（社長直通）</div>
             </div>
           </div>
@@ -194,7 +194,7 @@ function ServicesSection() {
   return (
     <section className="bg-gray-50 py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
+        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#c78c1e]">
           SERVICE
         </div>
         <h2 className="mb-16 text-center text-3xl font-bold md:text-4xl">お任せください</h2>
@@ -261,7 +261,7 @@ function InspectionSection() {
   return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
+        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#c78c1e]">
           SIMULATION
         </div>
         <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">車検費用を確認</h2>
@@ -300,7 +300,7 @@ function AccessSection() {
   return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
+        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#c78c1e]">
           ACCESS
         </div>
         <h2 className="mb-16 text-center text-3xl font-bold md:text-4xl">アクセス</h2>
@@ -397,7 +397,7 @@ function FAQSection() {
   return (
     <section className="bg-gray-50 py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#e8a83e]">
+        <div className="mb-4 text-center text-sm font-semibold tracking-wider text-[#c78c1e]">
           FAQ
         </div>
         <h2 className="mb-16 text-center text-3xl font-bold md:text-4xl">よくある質問</h2>
@@ -449,7 +449,7 @@ function FinalCTASection() {
         </p>
         <a
           href={COMPANY.phoneTel}
-          className="cta-phone-pulse inline-block rounded-xl bg-[#e8a83e] px-12 py-6 text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
+          className="cta-phone-pulse inline-block rounded-xl bg-[#c78c1e] px-12 py-6 text-2xl font-bold text-[#1e3a5f] transition hover:bg-gold-light md:text-3xl"
         >
           📞 {COMPANY.phone}
         </a>
