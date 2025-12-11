@@ -248,14 +248,14 @@ function ServicesSection() {
 function InspectionSection() {
   // 人気車種を表示（背景色がサービスセクションにあるので、ここは白）
   const popularVehicles = [
-    { maker: "honda", model: "n-box", name: "N-BOX", type: "軽自動車" },
-    { maker: "toyota", model: "prius", name: "プリウス", type: "普通車" },
-    { maker: "toyota", model: "aqua", name: "アクア", type: "普通車" },
-    { maker: "daihatsu", model: "tanto", name: "タント", type: "軽自動車" },
-    { maker: "nissan", model: "note", name: "ノート", type: "普通車" },
-    { maker: "nissan", model: "serena", name: "セレナ", type: "普通車" },
-    { maker: "suzuki", model: "spacia", name: "スペーシア", type: "軽自動車" },
-    { maker: "toyota", model: "harrier", name: "ハリアー", type: "普通車" },
+    { maker: "honda", id: "honda-nbox", name: "N-BOX", type: "軽自動車" },
+    { maker: "toyota", id: "toyota-prius", name: "プリウス", type: "普通車" },
+    { maker: "toyota", id: "toyota-aqua", name: "アクア", type: "普通車" },
+    { maker: "daihatsu", id: "daihatsu-tanto", name: "タント", type: "軽自動車" },
+    { maker: "nissan", id: "nissan-note", name: "ノート", type: "普通車" },
+    { maker: "nissan", id: "nissan-serena", name: "セレナ", type: "普通車" },
+    { maker: "suzuki", id: "suzuki-spacia", name: "スペーシア", type: "軽自動車" },
+    { maker: "toyota", id: "toyota-harrier", name: "ハリアー", type: "普通車" },
   ];
 
   return (
@@ -272,8 +272,8 @@ function InspectionSection() {
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
           {popularVehicles.map((vehicle) => (
             <Link
-              key={`${vehicle.maker}-${vehicle.model}`}
-              href={`/inspection/${vehicle.maker}/${vehicle.model}`}
+              key={vehicle.id}
+              href={`/inspection/${vehicle.maker}/${vehicle.id}`}
               className="rounded-xl border bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#1e3a5f] hover:shadow-lg"
             >
               <span className="mb-1 block text-xs text-gray-500">{vehicle.type}</span>
