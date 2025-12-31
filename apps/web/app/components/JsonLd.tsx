@@ -110,7 +110,7 @@ export function JsonLd() {
           { "@type": "Place", name: "東川口駅周辺" },
           { "@type": "Place", name: "浦和美園駅周辺" },
         ],
-        slogan: "車のこと、なんでもご相談ください",
+        slogan: "さいたま市緑区で25年。車検・整備・中古車販売。",
         foundingDate: "2000",
         knowsAbout: [
           "車検",
@@ -173,7 +173,6 @@ export function JsonLd() {
             },
           ],
         },
-        // sameAs: 公式SNS・外部プロファイル（Googleがビジネス正当性を判断）
         sameAs: [
           "https://www.instagram.com/askaautostation/",
           "https://www.carsensor.net/shop/saitama/313920001/",

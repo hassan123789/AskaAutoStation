@@ -34,12 +34,12 @@ function HeroSection() {
               ●さいたま市緑区で{COMPANY.years}年 | カーセンサー掲載店
             </div>
             <h1 className="mb-6 text-3xl font-bold leading-tight md:text-5xl">
-              車のこと、
+              さいたま市緑区の
               <br />
-              なんでもご相談ください
+              車検・整備・中古車
             </h1>
             <p className="mb-8 text-lg text-gray-300">
-              車検・整備・修理・板金・中古車販売・買取
+              地域で{COMPANY.years}年。車検・整備・修理・板金・中古車販売・買取
             </p>
           </div>
 
@@ -442,10 +442,10 @@ function FinalCTASection() {
     <section className="bg-[#1e3a5f] py-20 text-white md:py-28">
       <div className="container mx-auto px-4 text-center">
         <h2 className="mb-4 text-2xl font-bold md:text-3xl">
-          お気軽にお電話ください
+          さいたま市緑区で車検・整備なら
         </h2>
         <p className="mb-8 text-gray-300">
-          車のこと、なんでもご相談いただけます
+          {COMPANY.years}年の実績。お見積もり無料。お気軽にお電話ください
         </p>
         <a
           href={COMPANY.phoneTel}

@@ -6,9 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: [
-      "https://aska-auto-station-web.vercel.app/sitemap.xml",
-      "https://aska-auto-station-web.vercel.app/sitemap-v2.xml",
-    ],
+    sitemap: "https://aska-auto-station-web.vercel.app/sitemap.xml",
   };
 }
